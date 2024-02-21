@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="theme.css">
+        <title>dawn - log</title>
+
+        <style>
+            body {
+                background-color: white;
+                /* color: cornflowerblue; */
+            }
+
+            @keyframes fadein {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+
+            pre {
+                margin: 0;
+                font-size: 0.8em;
+                opacity: 0;
+                animation: fadein .2s;
+                animation-fill-mode: forwards; /* stay visible once done */
+            }
+
+            section {
+                margin: 1em 0;
+
+                /* border: .2em solid; */
+                /* padding: .5em; */
+                border-left: .2em solid;
+                padding-left: .5em;
+
+                color: olivedrab;
+                /* color: cadetblue; */
+                /* border-radius: 0 0 0 .5em; */
+            }
+
+            .blink {
+                animation: blink 2s step-end infinite;
+            }
+            @keyframes blink {
+                0%   { opacity: 0; }
+                50% { opacity: 1; }
+            }
+        </style>
+    </head>
+    <body class="ccon">
+        <div class="hcon pagemargin">
+            <main class="lbox">
+                <h1>log</h1>
+
+                <section>
+                    <pre style="animation-delay: 0.0s;">boot ok</pre>
+                    <pre style="animation-delay: 0.2s;">medium ok</pre>
+
+                    <pre style="animation-delay: 0.3s;">mounting bank0 bank1 bank2</pre>
+                    <pre style="animation-delay: 0.4s;">[warn] 0 reserve banks defined</pre>
+                    <pre style="animation-delay: 1.5s;">bank0 ok</pre>
+                    <pre style="animation-delay: 1.6s;">bank1 offline</pre>
+                    <pre style="animation-delay: 1.7s;">bank2 offline</pre>
+                    <pre style="animation-delay: 1.8s;">[warn] bank0 integrity will not be verified</pre>
+
+                    <pre style="animation-delay: 2.0s;">contacting twin0</pre>
+                    <pre style="animation-delay: 4.0s;">[warn] contact timeout on twin0, retrying (1/4)</pre>
+                    <pre style="animation-delay: 6.0s;">[warn] contact timeout on twin0, retrying (2/4)</pre>
+                    <pre style="animation-delay: 8.0s;">[warn] contact timeout on twin0, retrying (3/4)</pre>
+                    <pre style="animation-delay: 10.0s;">[warn] contact timeout on twin0, retrying (4/4)</pre>
+                    <pre style="animation-delay: 12.1s;">twin0 offline</pre>
+                    <pre style="animation-delay: 12.2s;">[warn] lockstep disabled, running in free mode</pre>
+
+                    <pre style="animation-delay: 12.3s;">initializing peripherals</pre>
+                    <pre style="animation-delay: 12.4s;">[warn] 0 peripherals defined</pre>
+                    <pre style="animation-delay: 12.5s;">[info] today is 2024-01-29</pre>
+                    <pre style="animation-delay: 12.8s;">[motd] Hello, world!</pre>
+                    <!-- <pre style="animation-delay: 12.6s;">&gt;<span class="blink">_</span></pre> -->
+                    
+                    <pre style="animation-delay: 14.0s;">[info] 6 hours have passed in poppy's cult</pre>
+                    <pre style="animation-delay: 14.1s;">[topic] ai accelerationism</pre>
+                    <pre style="animation-delay: 14.2s;">[topic] top 10 countries to emigrate to</pre>
+                    <pre style="animation-delay: 14.3s;">[topic] sex jokes</pre>
+                    <pre style="animation-delay: 14.4s;">[topic] music genres</pre>
+                    <pre style="animation-delay: 14.5s;">[topic] quirks of firefox css rendering</pre>
+                    <pre style="animation-delay: 14.6s;">[topic] food delivery orders</pre>
+                    <pre style="animation-delay: 14.7s;">[topic] hair care</pre>
+                    <pre style="animation-delay: 14.8s;">[topic] college courses</pre>
+                    <pre style="animation-delay: 14.9s;">[topic] everyone feels old</pre>
+                    <pre style="animation-delay: 15.0s;">[topic] email hosting</pre>
+                    <pre style="animation-delay: 15.1s;">[topic] domain names</pre>
+                    <pre style="animation-delay: 15.2s;">[topic] old versions of our websites</pre>
+                    <pre style="animation-delay: 15.3s;">[topic] hair care / coconut oil redux</pre>
+                    <pre style="animation-delay: 16.0s;">$ <span class="blink">▁</span></pre>
+                </section>
+
+                <nav class="bottomright">
+                    <a href="home.html">home</a>
+                    <a href="about.html">about</a>
+                    <a href="art.html">art</a>
+                    <a href="links.html">links</a>
+                    <a href="log.html">log</a>
+                </nav>
+            </main>
+
+            <footer class="sbox" style="background: linear-gradient(to bottom, transparent, cadetblue); border: none;">
+            </footer>
+        </div>
+    </body>
+</html>
