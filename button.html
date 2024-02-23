@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="theme.css">
+        <title>dawn - button</title>
+
+        <style>
+            .button {
+                width: 88px;
+                height: 31px;
+            }
+
+            .button1 {
+                border: .2em solid black;
+                border-radius: 0 0 0 .5em;
+                padding: .2em;
+
+                word-break: break-all;
+                /* line-height: .97em; */
+                line-height: .9em;
+
+                background: rgba(255, 255, 255, .4);
+                /* backdrop-filter: blur(5px); */
+
+                position: relative;
+            }
+            .button::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+
+                background: center/200% url(photos/dread/fog.jpg), white;
+            }
+        </style>
+    </head>
+    <body class="ccon" style="align-items: center; gap: .2em;">
+        
+        <!-- <div class="button button1" style="outline: .2em solid black; padding: .2em; word-break: break-all; line-height: 1.1; background: center/200% url(photos/dread/fog.jpg), white;"> -->
+        <div class="button button1">
+            dawnvoid.neocities.org
+        </div>
+
+        <img class="button" src="buttons/dawnvoid_original.png">
+        <img class="button" src="buttons/dawnvoid.gif">
+        <img class="button" src="buttons/dawnvoid.png">
+        <img class="button" src="buttons/dawnvoid_bw.png">
+        <img class="button" src="buttons/dawnvoid_glass.png">
+        <img class="button" src="buttons/dawnvoid_fog.png">
+    </body>
+</html>

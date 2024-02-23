@@ -17,6 +17,24 @@
             details.gallery {
                 background: linear-gradient(.1turn, red, blue);
             }
+
+            details#buttons {
+                /* background: linear-gradient(.1turn, ghostwhite, aliceblue); */
+                /* background: white; */
+                background: transparent;
+            }
+            details#buttons div {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                gap: 1em;
+            }
+            details#buttons img {
+                box-shadow: none;
+                border: none;
+                background: none;
+                margin: 0;
+            }
         </style>
     </head>
 
@@ -65,6 +83,17 @@
                         <img loading="lazy" src="art/dontthinktoomuch.png">
                         <img loading="lazy" src="art/goodluckpilot.png">
                         <img loading="lazy" src="art/reflector.png">
+                    </div>
+                </details>
+                <details class="gallery" id="buttons">
+                    <summary>buttons</summary>
+                    <div>
+                        <img loading="lazy" src="buttons/dawnvoid_original.png" width="88" height="31">
+                        <img loading="lazy" src="buttons/dawnvoid.gif" width="88" height="31">
+                        <img loading="lazy" src="buttons/dawnvoid.png" width="88" height="31">
+                        <img loading="lazy" src="buttons/dawnvoid_bw.png" width="88" height="31">
+                        <img loading="lazy" src="buttons/dawnvoid_glass.png" width="88" height="31">
+                        <img loading="lazy" src="buttons/dawnvoid_fog.png" width="88" height="31">
                     </div>
                 </details>
 
