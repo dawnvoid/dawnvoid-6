@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--
+        _                       
+        \`*-.                   
+         )  _`-.                
+        .  : `. .               
+        : _   '  \              
+        ; *` _.   `*-._         
+        `-.-'          `-.      
+            ;       `       `.    
+            :.       .        \   
+            . \  .   :   .-'   .  
+            '  `+.;  ;  '      :  
+            :  '  |    ;       ;-.
+            ; '   : :`-:     _.`* ;
+    [bug] .*' /  .*' ; .*`- +'  `*'
+        `*-*   `*-*  `*-*'       
+    -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,144 +25,152 @@
         <title>dawn &bullet; photos</title>
 
         <style>
-            :root {
-                --fg: white;
-                --bg: black;
-            }
-
             body {
-                background-color: black;
-            }
-            .box {
-                border: none;
+                /* background: fixed center url(theme_bg_black.png), center/cover url(photos/highway/night_motion_8.jpg), white; */
+                background: fixed center url(theme_bg_black.png), center/cover url(photos/highway/night_motion_3.jpg), white;
             }
 
-            details {
-                text-align: center;
-            }
-            img {
-                margin: 1em auto;
-                max-height: calc(100vh - 2em);
+            details.gallery {
+                background: linear-gradient(to right, skyblue, hotpink)
             }
         </style>
     </head>
 
-    <body>
-        <header class="box">
-            <nav>
-                <a href="index.html">home</a>
-            </nav>
-        </header>
+    <body class="ccon">
+        <div class="hcon pagemargin pageheight">
+            <main class="lbox relative scrollbox glass">
+                <h1>photos</h1>
 
-        <main class="box">
-            <h1>photos</h1>
-            <p class="tagline"><del>one day i'll have a real camera</del> i got one!</p>
+                <details class="gallery">
+                    <summary>alone</summary>
+                    <div>
+                        <img loading="lazy" src="photos/alone/alone_1.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/alone/alone_2.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/alone/concrete_1.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/alone/concrete_2.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/alone/concrete_3.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/alone/concrete_4.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/alone/white.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/alone/window_1.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/alone/window_2.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/alone/garage.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/alone/grapes.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/alone/yard.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/alone/look.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/alone/window_3.jpg" width="1440" height="1440">
+                    </div>
+                </details>
 
-            <details>
-                <summary>alone (14)</summary>
-                <img loading="lazy" src="photos/alone/alone_1.jpg">
-                <img loading="lazy" src="photos/alone/alone_2.jpg">
-                <img loading="lazy" src="photos/alone/concrete_1.jpg">
-                <img loading="lazy" src="photos/alone/concrete_2.jpg">
-                <img loading="lazy" src="photos/alone/concrete_3.jpg">
-                <img loading="lazy" src="photos/alone/concrete_4.jpg">
-                <img loading="lazy" src="photos/alone/white.jpg">
-                <img loading="lazy" src="photos/alone/window_1.jpg">
-                <img loading="lazy" src="photos/alone/window_2.jpg">
-                <img loading="lazy" src="photos/alone/garage.jpg">
-                <img loading="lazy" src="photos/alone/grapes.jpg">
-                <img loading="lazy" src="photos/alone/yard.jpg">
-                <img loading="lazy" src="photos/alone/look.jpg">
-                <img loading="lazy" src="photos/alone/window_3.jpg">
-            </details>
+                <details class="gallery">
+                    <summary>decay</summary>
+                    <div>
+                        <img loading="lazy" src="photos/decay/decay_1.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/decay/decay_2.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/decay/decay_3.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/decay/power_plant_1.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/decay/power_plant_2.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/decay/reclaim.jpg" width="3000" height="4000">
+                    </div>
+                </details>
 
-            <details>
-                <summary>decay (6)</summary>
-                <img loading="lazy" src="photos/decay/decay_1.jpg">
-                <img loading="lazy" src="photos/decay/decay_2.jpg">
-                <img loading="lazy" src="photos/decay/decay_3.jpg">
-                <img loading="lazy" src="photos/decay/power_plant_1.jpg">
-                <img loading="lazy" src="photos/decay/power_plant_2.jpg">
-                <img loading="lazy" src="photos/decay/reclaim.jpg">
-            </details>
+                <details class="gallery">
+                    <summary>dread</summary>
+                    <div>
+                        <img loading="lazy" src="photos/dread/behind.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/dismal_1.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/dismal_2.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/dismal_3.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/dread_1.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/dread/dread_2.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/dread_3.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/dread_4.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/dread_5.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/exit.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/harsh.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/lost.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/off.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/pink_1.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/carts.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/dread/powerlines.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/dread/no_riders.jpg" width="4000" height="3000">
+                    </div>
+                </details>
 
-            <details>
-                <summary>dread (17)</summary>
-                <img loading="lazy" src="photos/dread/behind.jpg">
-                <img loading="lazy" src="photos/dread/dismal_1.jpg">
-                <img loading="lazy" src="photos/dread/dismal_2.jpg">
-                <img loading="lazy" src="photos/dread/dismal_3.jpg">
-                <img loading="lazy" src="photos/dread/dread_1.jpg">
-                <img loading="lazy" src="photos/dread/dread_2.jpg">
-                <img loading="lazy" src="photos/dread/dread_3.jpg">
-                <img loading="lazy" src="photos/dread/dread_4.jpg">
-                <img loading="lazy" src="photos/dread/dread_5.jpg">
-                <img loading="lazy" src="photos/dread/exit.jpg">
-                <img loading="lazy" src="photos/dread/harsh.jpg">
-                <img loading="lazy" src="photos/dread/lost.jpg">
-                <img loading="lazy" src="photos/dread/off.jpg">
-                <img loading="lazy" src="photos/dread/pink_1.jpg">
-                <img loading="lazy" src="photos/dread/carts.jpg">
-                <img loading="lazy" src="photos/dread/powerlines.jpg">
-                <img loading="lazy" src="photos/dread/no_riders.jpg">
-            </details>
+                <details class="gallery">
+                    <summary>highway</summary>
+                    <div>
+                        <img loading="lazy" src="photos/highway/night_motion_1.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/highway/night_motion_2.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/highway/night_motion_3.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/highway/night_motion_4.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/highway/night_motion_5.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/highway/night_motion_6.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/highway/night_motion_7.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/highway/night_motion_8.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/highway/night_motion_9.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/highway/night_motion_10.jpg" width="4000" height="3000">
+                    </div>
+                </details>
 
-            <details>
-                <summary>highway (10)</summary>
-                <img loading="lazy" src="photos/highway/night_motion_1.jpg">
-                <img loading="lazy" src="photos/highway/night_motion_2.jpg">
-                <img loading="lazy" src="photos/highway/night_motion_3.jpg">
-                <img loading="lazy" src="photos/highway/night_motion_4.jpg">
-                <img loading="lazy" src="photos/highway/night_motion_5.jpg">
-                <img loading="lazy" src="photos/highway/night_motion_6.jpg">
-                <img loading="lazy" src="photos/highway/night_motion_7.jpg">
-                <img loading="lazy" src="photos/highway/night_motion_8.jpg">
-                <img loading="lazy" src="photos/highway/night_motion_9.jpg">
-                <img loading="lazy" src="photos/highway/night_motion_10.jpg">
-            </details>
+                <details class="gallery">
+                    <summary>uncategorized</summary>
+                    <div>
+                        <img loading="lazy" src="photos/uncategorized/_IGP6011.JPG" width="4000" height="3000">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6004.JPG" width="2992" height="2992">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6016.JPG" width="2992" height="2992">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6025.JPG" width="2992" height="2992">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6033.JPG" width="2992" height="2992">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6042.JPG" width="2992" height="2992">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6043.JPG" width="2992" height="2992">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6044.JPG" width="2992" height="2992">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6084.JPG" width="2992" height="2992">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6282.JPG" width="3000" height="4000">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6296.JPG" width="2248" height="4000">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6303.JPG" width="2248" height="4000">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6304.JPG" width="2248" height="4000">
+                        <img loading="lazy" src="photos/uncategorized/_IGP6360.JPG" width="2248" height="4000">
+                        <img loading="lazy" src="photos/uncategorized/IMGP5952.JPG" width="1440" height="1440">
+                        <img loading="lazy" src="photos/uncategorized/IMGP5963.JPG" width="1920" height="1440">
+                        <img loading="lazy" src="photos/uncategorized/IMGP5969.JPG" width="1440" height="1440">
+                    </div>
+                </details>
 
-            <details>
-                <summary>uncategorized</summary>
-                <img loading="lazy" src="photos/uncategorized/_IGP6011.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6004.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6016.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6025.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6033.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6042.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6043.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6044.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6084.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6282.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6296.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6303.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6304.JPG">
-                <img loading="lazy" src="photos/uncategorized/_IGP6360.JPG">
-                <img loading="lazy" src="photos/uncategorized/IMGP5952.JPG">
-                <img loading="lazy" src="photos/uncategorized/IMGP5963.JPG">
-                <img loading="lazy" src="photos/uncategorized/IMGP5969.JPG">
-            </details>
+                <!-- secret photos? :eye: -->
+                <!--
+                <details class="gallery">
+                    <summary>misc</summary>
+                    <div>
+                        <img loading="lazy" src="photos/cats/momo_1.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/color/blue.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/color/petal.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/misc/out_of_hummus.jpg" width="1080" height="1444">
+                        <img loading="lazy" src="photos/heart.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/neon_1.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/neon_2.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/nest.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/pink_2.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/scatter.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/uwu.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/vines.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/what_1.jpg" width="3000" height="4000">
+                        <img loading="lazy" src="photos/urbex_1.jpg" width="4000" height="3000">
+                        <img loading="lazy" src="photos/urbex_2.jpg" width="4000" height="3000">
+                    </div>
+                </details>
+                -->
 
-            <!-- secret photos? :eye: -->
-            <!-- <details>
-                <summary>misc</summary>
-                <img loading="lazy" src="photos/cats/momo_1.jpg">
-                <img loading="lazy" src="photos/color/blue.jpg">
-                <img loading="lazy" src="photos/color/petal.jpg">
-                <img loading="lazy" src="photos/misc/out_of_hummus.jpg">
-                <img loading="lazy" src="photos/heart.jpg">
-                <img loading="lazy" src="photos/neon_1.jpg">
-                <img loading="lazy" src="photos/neon_2.jpg">
-                <img loading="lazy" src="photos/nest.jpg">
-                <img loading="lazy" src="photos/pink_2.jpg">
-                <img loading="lazy" src="photos/scatter.jpg">
-                <img loading="lazy" src="photos/uwu.jpg">
-                <img loading="lazy" src="photos/vines.jpg">
-                <img loading="lazy" src="photos/what_1.jpg">
-            </details> -->
-        </main>
+                <nav class="bottomright">
+                    <a href="home.html">home</a>
+                    <a href="about.html">about</a>
+                    <a href="photos.html">photos</a>
+                    <a href="art.html">art</a>
+                    <a href="links.html">links</a>
+                    <a href="log.html">log</a>
+                </nav>
+            </main>
 
-        <footer class="box">
-            (c) nobody
-        </footer>
+            <footer class="sbox" style="background: linear-gradient(to bottom, transparent, darkorange);">
+            </footer>
+        </div>
     </body>
 </html>

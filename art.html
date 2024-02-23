@@ -10,47 +10,22 @@
         <style>
             body {
                 /* background: linear-gradient(.1turn, red, blue) */
+                /* background: center/cover url(art/dontthinktoomuch.png), white; */
+                background: fixed center url(theme_bg_black.png), center/cover url(photos/urbex_1.jpg), white;
             }
 
-            details {
-                /* border-left: .2em solid; */
-                border: .2em solid;
-                margin: 1em 0;
-                /* padding: 0 .5em; */
-                /* background-color: darkcyan; */
-                background: linear-gradient(.1turn, red, blue)
-            }
-
-            details img {
-                margin: 1em auto;
-                border: .2em solid;
-                box-shadow: -.25em .25em 0 black;
-                background-color: white;
-            }
-
-            details div {
-                /* margin-left: 1em; */
-                margin: 1em;
-                /* padding: 1em; */
-                padding-bottom: 1em;
-            }
-
-            summary {
-                /* margin-left: .5em; */
-                padding-left: .5em;
-                color: white;
-                background-color: black;
-                font-weight: 700;
+            details.gallery {
+                background: linear-gradient(.1turn, red, blue);
             }
         </style>
     </head>
 
     <body class="ccon">
-        <div class="hcon pagemargin">
-            <main class="lbox">
+        <div class="hcon pagemargin pageheight">
+            <main class="lbox relative scrollbox glass">
                 <h1>art</h1>
 
-                <details>
+                <details class="gallery">
                     <summary>old header art</summary>
                     <div>
                         <img loading="lazy" src="art/albete.png">
@@ -64,7 +39,7 @@
                         <img loading="lazy" src="art/ooo.png">
                     </div>
                 </details>
-                <details>
+                <details class="gallery">
                     <summary>robot arcology</summary>
                     <div>
                         <img loading="lazy" src="art/outerworld_bulb_urchin.png">
@@ -72,7 +47,7 @@
                         <img loading="lazy" src="art/outerworld_screamer.png">
                     </div>
                 </details>
-                <details>
+                <details class="gallery">
                     <summary>???</summary>
                     <div>
                         <img loading="lazy" src="art/wtf.png">
@@ -89,19 +64,21 @@
                         <img loading="lazy" src="art/ephemeral.png">
                         <img loading="lazy" src="art/dontthinktoomuch.png">
                         <img loading="lazy" src="art/goodluckpilot.png">
+                        <img loading="lazy" src="art/reflector.png">
                     </div>
                 </details>
 
                 <nav class="bottomright">
                     <a href="home.html">home</a>
                     <a href="about.html">about</a>
+                    <a href="photos.html">photos</a>
                     <a href="art.html">art</a>
                     <a href="links.html">links</a>
                     <a href="log.html">log</a>
                 </nav>
             </main>
 
-            <footer class="sbox" style="background: linear-gradient(to bottom, transparent, plum)">
+            <footer class="sbox" style="background: linear-gradient(to bottom, transparent, cornflowerblue)">
             </footer>
         </div>
     </body>

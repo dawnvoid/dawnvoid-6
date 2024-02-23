@@ -1,6 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 @font-face {
+    font-family: 'Jost';
+    src: url('fonts/jost/Jost-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('fonts/jost/Jost-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+/* @font-face {
     font-family: 'EB Garamond';
     src: url('fonts/eb_garamond/ebgaramond-variablefont_wght.woff2') format('woff2'),
          url('fonts/eb_garamond/ebgaramond-variablefont_wght.woff') format('woff');
@@ -17,7 +30,7 @@
 @font-face {
     font-family: 'Pixelify Sans';
     src: url('fonts/pixelify_sans/PixelifySans-VariableFont_wght.ttf') format('truetype');
-}
+} */
 
 * {
     /* outline: 1px solid; */
@@ -108,13 +121,13 @@ a:hover {
     text-decoration: underline;
 }
 
-figure {
+/* figure {
     border: 1px solid;
     text-align: center;
     width: fit-content;
     margin: 1em auto;
     padding: 0.25em;
-}
+} */
 
 pre, code {
     font-family: monospace;
@@ -130,6 +143,7 @@ pre, code {
 }
 
 .lbox {
+    /* background-color: white; */
     border: .2em solid;
     border-radius: 0 0 0 1em;
     padding: .5em;
@@ -138,6 +152,7 @@ pre, code {
 }
 
 .rbox {
+    /* background-color: white; */
     border: .2em solid;
     border-radius: 0 0 0 0;
     padding: .5em;
@@ -154,6 +169,7 @@ pre, code {
 }
 
 .sqbox {
+    /* background-color: white; */
     border: .2em solid;
     border-radius: 0 0 0 0;
     padding: .5em;
@@ -171,7 +187,8 @@ pre, code {
 
 .hcon {
     display: flex;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
+    flex-flow: row nowrap;
     align-items: stretch;
     /* align-items: start; */
     justify-content: center;
@@ -185,15 +202,27 @@ pre, code {
     margin: .5em;
 }
 
+.pageheight {
+    max-height: 50vh;
+}
+
+.scrollbox {
+    overflow-y: scroll;
+}
+
 .relative {
     position: relative;
 }
 
 .bottomright {
+    /* position: absolute; */
+    /* bottom: .5em; */
+    /* right: .5em; */
+
     position: relative;
+    margin: .5em 0;
     bottom: 0;
     right: 0;
-    margin: .5em;
 }
 
 .maxheight {
@@ -216,4 +245,50 @@ pre, code {
     bottom: -.2em;
     z-index: -1;
     border-radius: inherit;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(5px);
+}
+.blackglass {
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(5px);
+}
+
+details.gallery {
+    /* border-left: .2em solid; */
+    border: .2em solid;
+    margin: 1em 0;
+    /* padding: 0 .5em; */
+    /* background-color: darkcyan; */
+    /* background: linear-gradient(.1turn, red, blue) */
+}
+
+details.gallery img {
+    margin: 1em auto;
+    border: .2em solid;
+    box-shadow: -.25em .25em 0 black;
+    background-color: white;
+
+    max-height: calc(100vh - 2em);
+}
+
+details.gallery div {
+    /* margin-left: 1em; */
+    margin: 1em;
+    /* padding: 1em; */
+    /* padding-bottom: 1em; */
+}
+
+details.gallery summary {
+    /* margin-left: .5em; */
+    padding-left: .5em;
+    color: white;
+    background-color: black;
+    font-weight: 700;
+
+    /* cool trick */
+    position: sticky;
+    top: -.5em;
 }
