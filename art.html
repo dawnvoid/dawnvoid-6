@@ -18,22 +18,30 @@
                 background: linear-gradient(.1turn, red, blue);
             }
 
-            details#buttons {
-                /* background: linear-gradient(.1turn, ghostwhite, aliceblue); */
-                /* background: white; */
-                background: transparent;
+            details.fullwidth img {
+                width: 100%;
             }
-            details#buttons div {
+
+            details.noframe img {
+                box-shadow: none;
+                border: none;
+                background: none;
+                margin: 0;
+            }
+
+            details.horizontal div {
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
                 gap: 1em;
             }
-            details#buttons img {
-                box-shadow: none;
-                border: none;
-                background: none;
+            details.horizontal img {
+                width: auto;
                 margin: 0;
+            }
+
+            .pixelart {
+                image-rendering: pixelated;
             }
         </style>
     </head>
@@ -43,7 +51,7 @@
             <main class="lbox relative scrollbox glass">
                 <h1>art</h1>
 
-                <details class="gallery">
+                <details class="gallery pixelart" style="background: linear-gradient(to right, linen, lavender);">
                     <summary>old header art</summary>
                     <div>
                         <img loading="lazy" src="art/albete.png" width="162" height="219">
@@ -57,12 +65,13 @@
                         <img loading="lazy" src="art/ooo.png" width="215" height="288">
                     </div>
                 </details>
-                <details class="gallery">
-                    <summary>robot arcology</summary>
+                <details class="gallery pixelart horizontal" style="background: linear-gradient(to right, palegreen, skyblue);">
+                    <summary>pixel</summary>
                     <div>
                         <img loading="lazy" src="art/outerworld_bulb_urchin.png" width="64" height="64">
                         <img loading="lazy" src="art/outerworld_mantis.png" width="64" height="64">
                         <img loading="lazy" src="art/outerworld_screamer.png" width="64" height="64">
+                        <img loading="lazy" src="art/computer.png" width="64" height="64">
                     </div>
                 </details>
                 <details class="gallery">
@@ -85,7 +94,7 @@
                         <img loading="lazy" src="art/reflector.png" width="1080" height="1080">
                     </div>
                 </details>
-                <details class="gallery" id="buttons">
+                <details class="gallery pixelart horizontal noframe" id="buttons" style="background: transparent;">
                     <summary>buttons</summary>
                     <div>
                         <img loading="lazy" src="buttons/dawnvoid_original.png" width="88" height="31">
