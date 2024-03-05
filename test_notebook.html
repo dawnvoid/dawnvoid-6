@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="theme.css">
+        <title>dawn - notebook</title>
+
+        <style>
+            body {
+                width: 100%;
+                min-height: 100vh;
+
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: center;
+
+                font-size: 12px;
+                /* font-family: monospace; */
+            }
+
+            .spread {
+                /* display: flex; */
+                display: none;
+                flex-flow: row nowrap;
+
+                border: .2em solid black;
+                border-radius: 1em;
+                
+                position: relative;
+            }
+            .spread:target {
+                display: flex;
+            }
+
+            .p {
+                display: block;
+                width: calc(50vw - 1em);
+                /* height: 40em; */
+                aspect-ratio: 3/4;
+            }
+            a.p {
+                text-decoration: none;
+                color: inherit;
+            }
+            a.p::before { content: ''; }
+            a.p::after { content: ''; }
+
+            .spread > section {
+                width: min(calc(50vw - 1em), 30em);
+                aspect-ratio: 3/4;
+
+                overflow-y: scroll;
+                overflow-wrap: break-word;
+
+                padding: .5em;
+            }
+            .spread > section:first-of-type {
+                /* border: .2em solid black; */
+                /* border-radius: .5em 0 0 .5em; */
+                border-right: .1em solid black;
+            }
+            .spread > section:last-of-type {
+                /* border: .2em solid black; */
+                /* border-radius: 0 .5em .5em 0; */
+                border-left: .1em solid black;
+            }
+
+            .spread > a {
+                font-size: 2em;
+                line-height: 0.6;
+            }
+            .spread > a:hover {
+                text-decoration: none;
+            }
+            .spread > a::before { content: ''; }
+            .spread > a::after { content: ''; }
+            .spread > a:first-of-type {
+                position: absolute;
+                bottom: .25em;
+                left: .25em;
+            }
+            .spread > a:last-of-type {
+                position: absolute;
+                bottom: .25em;
+                right: .25em;
+            }
+
+            .spread:first-of-type > a:first-of-type {
+                display: none;
+            }
+            .spread:last-of-type > a:last-of-type {
+                display: none;
+            }
+
+            ul {
+                list-style-position: inside;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="spread" id="0">
+            <a href="#0">&lArr;</a>
+            <section>
+                <h1>the soup</h1>
+                <p>2024-03-04</p>
+            </section>
+            <section>
+                <p>i hungy</p>
+            </section>
+            <a href="#1">&rArr;</a>
+        </div>
+
+        <div class="spread" id="1">
+            <a href="#0">&lArr;</a>
+            <section>
+                <p>there is a soup :thumbsup:</p>
+            </section>
+            <section>
+                <ul>
+                    <li>i</li>
+                    <li>am</li>
+                    <li>going</li>
+                    <li>to</li>
+                    <li>eat</li>
+                    <li>soup</li>
+                    <li>:)</li>
+                </ul>
+            </section>
+            <a href="#2">&rArr;</a>
+        </div>
+
+        <div class="spread" id="2">
+            <a href="#1">&lArr;</a>
+            <section>
+                <p>left3</p>
+            </section>
+            <section>
+                <p>i eated the soup:)</p>
+            </section>
+            <a href="#3">&rArr;</a>
+        </div>
+    </body>
+</html>
