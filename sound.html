@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="theme.css">
+        <title>dawn - sound</title>
+
+        <style>
+            body {
+                /* background: linear-gradient(.1turn, red, blue) */
+                /* background: center/cover url(art/dontthinktoomuch.png), white; */
+                background: fixed center url(theme_bg_black.png), center/cover url(photos/uncategorized/hike_2.JPG), white;
+            }
+
+            details.gallery {
+                background: linear-gradient(.4turn, lemonchiffon, #f6358a);
+            }
+
+            details.fullwidth img {
+                width: 100%;
+            }
+
+            details.noframe img {
+                box-shadow: none;
+                border: none;
+                background: none;
+                margin: 0;
+            }
+
+            details.horizontal div {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                gap: 1em;
+            }
+            details.horizontal img {
+                width: auto;
+                margin: 0;
+            }
+        </style>
+    </head>
+
+    <body class="ccon">
+        <div class="hcon pagemargin pageheight">
+            <main class="lbox relative scrollbox glass">
+                <h1>sound</h1>
+
+                <!-- <details class="gallery" style="background: linear-gradient(to right, linen, lavender);"> -->
+                <details class="gallery">
+                    <summary>music</summary>
+                    <div>
+                        <audio controls src="sound/music/2024-01-04.ogg" title="2024-01-04.ogg"></audio>
+                        <audio controls src="sound/music/2024-05-27.ogg" title="2024-05-27.ogg"></audio>
+                        <audio controls src="sound/music/2024-06-02_2.ogg" title="2024-06-02_2.ogg"></audio>
+                        <audio controls src="sound/music/2025-01-03.ogg" title="2025-01-03.ogg"></audio>
+                        <audio controls src="sound/music/Vocaroo 1niY7h2OnIQr.mp3" title="Vocaroo 1niY7h2OnIQr.mp3"></audio>
+                    </div>
+                </details>
+
+                <!-- <details class="gallery" style="background: linear-gradient(to right, linen, lavender);"> -->
+                <details class="gallery">
+                    <summary>cassette loops</summary>
+                    <div>
+                        <img loading="lazy" src="sound_cassette.gif" width="512" height="512" style="width: 75%;" class="rawgalleryimg">
+                        <audio controls src="sound/cassette_loops/2025-01-20_cassetteloops_01-glued.wav" title="2025-01-20_cassetteloops_01-glued.wav"></audio>
+                        <audio controls src="sound/cassette_loops/2025-01-20_cassetteloops_02-glued.wav" title="2025-01-20_cassetteloops_02-glued.wav"></audio>
+                        <audio controls src="sound/cassette_loops/2025-01-20_cassetteloops_03-glued.wav" title="2025-01-20_cassetteloops_03-glued.wav"></audio>
+                    </div>
+                </details>
+
+                <nav class="bottomright">
+                    <a href="home.html">home</a>
+                    <a href="about.html">about</a>
+                    <a href="photos.html">photos</a>
+                    <a href="art.html">art</a>
+                    <a href="sound.html">sound</a>
+                    <a href="links.html">links</a>
+                    <a href="log.html">log</a>
+                </nav>
+            </main>
+
+            <footer class="sbox" style="background: linear-gradient(to bottom, transparent, darkseagreen)">
+            </footer>
+        </div>
+    </body>
+</html>

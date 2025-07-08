@@ -93,6 +93,18 @@ h1 {
     /* background: linear-gradient(to right, transparent, cornflowerblue); */
 }
 
+h2 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h2::before {
+    content: "「 ";
+}
+h2::after {
+    content: " 」";
+}
+
 p {
     text-align: justify;
     margin-top: 1em;
@@ -248,8 +260,10 @@ pre, code {
 }
 
 .glass {
-    background: rgba(255, 255, 255, 0.50);
-    backdrop-filter: blur(5px);
+    /* background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(5px); */
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(10px);
 }
 .blackglass {
     background: rgba(0, 0, 0, 0.50);
@@ -265,7 +279,7 @@ details.gallery {
     /* background: linear-gradient(.1turn, red, blue) */
 }
 
-details.gallery img {
+details.gallery img:not(.rawgalleryimg) {
     margin: 1em auto;
     border: .2em solid;
     box-shadow: -.25em .25em 0 black;
@@ -291,4 +305,30 @@ details.gallery summary {
     /* cool trick */
     position: sticky;
     top: -.5em;
+}
+
+
+details.gallery audio {
+    display: block;
+    width: 100%;
+
+    margin: 1em auto;
+    border: .2em solid;
+    box-shadow: -.25em .25em 0 black;
+
+    /* background: linear-gradient(.4turn, lemonchiffon, #f6358a); */
+    /* padding: .5em; */
+}
+
+ul {
+    list-style-position: outside;
+    padding-left: 1em;
+}
+ol {
+    list-style-position: outside;
+    padding-left: 1.2em;
+}
+
+hr {
+    height: 2em;
 }
